@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--CONFIGURACION-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Inetum es una compañía de IT ágil que proporciona servicios y soluciones digitales y un grupo global que ayuda a compañías e instituciones a aprovechar al máximo el flow digital.">
+    <title>PRESUPUESTOS</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <!--FAVICON-->
+    <link rel="icon" href="../favicon.ico" type="imagen/png">
+</head>
+<body>
+    <header>
+        <!--CONTENIDO-->
+        <img src="../assets/images/inetum1.jpg" alt="Logo Inetum" width="300" height="100">
+        <!--nav: Barra de navegación-->
+        <nav>
+            <!--lista desordenada para el menú-->
+            <ul id="indice">
+                <li class="lista1"><a class="menu" href="../index.html">Inicio</a></li>
+                <li class="lista1"><a class="menu" href="../views/productos.html">Galería</a></li>
+                <li class="lista1"><a class="menu" href="../views/presupuestos.html" style="background: #00aa9b; padding: 15px;">Presupuestos</a></li>
+                <li class="lista1"><a class="menu" href="../views/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Solicita tu presupuesto</h1>
+        <!--formulario-->
+        
+            <form id="formulario">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <ul class="form1">
+                        <li class="lista2">
+                            <label for="name">Nombre</label>
+                            <input id="name" name="name" type="text" placeholder="Escriba su nombre">
+                        </li>
+                        <li class="lista2">
+                            <label for="surname">Apellidos</label>
+                            <input id="surname" name="surname" type="text" placeholder="Escriba sus apellidos">
+                        </li>
+                        <li class="lista2">
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" placeholder="alvaro.moreno@inetum.com">
+                        </li>
+                        <li class="lista2">
+                            <label for="tel">Teléfono de contacto</label>
+                            <input id="tel" name="tel" type="tel" placeholder="+34">
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Presupuesto</legend>
+                    <ul class="form1">
+                        <li class="lista2">
+                            <label for="producto">Elige un perfil</label>
+                            <select name="producto" id="producto">
+                                <option value="">Selecciona una opción</option>
+                                <option value="2000">Desarrollador - 2000€</option>
+                                <option value="3000">Consultor SAP - 3000€</option>
+                                <option value="1500">Administrador de Sistemas y Redes - 1500€</option>
+                                <option value="2500">Consultor Big Data - 2500€</option>
+                                <option value="4000">Consultor de Ciberseguridad - 4000€</option>
+                            </select>
+                        </li>
+                        <li class="lista2">
+                            <label for="entrega">Plazo de disponibilidad</label>
+                            <input type="number" name="entrega" id="entrega" min="0" max="10" placeholder="Días" disabled>
+                        </li>
+                        <li class="lista2">
+                            <label for="experiencia">Elige la experiencia del candidato:</label>
+                            <select name="experiencia" id="experiencia" disabled>
+                                <option value="">Selecciona una opción:</option>
+                                <option value="100">Sin experiencia - 100€</option>
+                                <option value="300">Perfil Junior - 300€</option>
+                                <option value="500">Perfil Senior - 500€</option>
+                                <option value="700">Project Manager - 700€</option>
+                            </select>   
+                        </li>
+                        <li class="lista2">
+                            Elige las habilidades del candidato:<br><br>
+                            <input type="checkbox" id="ext1" value="100" disabled>Nivel alto de Paquete Office 
+                            <input type="checkbox" id="ext2" value="200" disabled>Inglés C1
+                            <input type="checkbox" id="ext3" value="300" disabled>Conoce más de un idioma
+                            <input type="checkbox" id="ext4" value="400" disabled>Con certificaciones
+                            <input type="checkbox" id="ext5" value="500" disabled>Experiencia como responsable
+                        </li>
+                       
+                        <li class="lista2">
+                            <label for="presupuesto">Presupuesto estimado:</label>
+                            <input type="text" name="presupuesto" id="presupuesto">
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Aceptación de condiciones y envío de presupuesto</legend>
+                    <ul class="form1">
+                        <li class="lista2">
+                            <label for="privacidad">He leído la política de privacidad</label>
+                            <input id="privacidad" type="checkbox">
+                        </li>
+                        <li id="botones">
+                            <button id="enviar" type="submit" title="Pulse aquí para enviar">Enviar</button>
+                            <button type="reset" title="Pulse aquí para borrar">Borrar</button>
+                        </li>
+                    </ul>
+                </fieldset>
+            
+            </form>
+        
+    </main>
+    <footer>
+        <!--Pie de página-->
+        <h2>Inetum</h2>
+        <div id="caja4">
+            <img src="../assets/images/direccion.jpg" alt="dirección">
+            Dirección: C/ María de Portugal, 9-11 28050, Madrid
+            <img src="../assets/images/telefono.jpg" alt="teléfono">
+            Teléfono: +34 913874700
+            <img src="../assets/images/siguenos.jpg" alt="síguenos">
+            Síguenos: 
+            <!--Imágenes con enlaces a las diferentes redes sociales-->
+            <a href="https://twitter.com"><img src="../assets/images/twitter.jpg" alt="twitter"></a> 
+            <a href="https://www.facebook.com"><img src="../assets/images/facebook.jpg" alt="facebook"></a> 
+            <a href="https://www.linkedin.com"><img src="../assets/images/linkedin.jpg" alt="linkedin"></a> 
+            <a href="https://www.youtube.com/"><img src="../assets/images/youtube.jpg" alt="youtube"></a>  
+            <a href="https://www.instagram.com"><img src="../assets/images/instagram.jpg" alt="instagram"></a> 
+            Aviso Legal
+        </div>
+    </footer>
+    <!--JAVASCRIPT-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/formulario.js"></script>
+</body>
+</html>
